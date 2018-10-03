@@ -20,15 +20,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // weaver: urlSession = URLSession
     // weaver: urlSession.scope = .container
     // weaver: urlSession.customRef = true
-
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    
+    func applicationDidFinishLaunching(_ application: UIApplication) {
         
         window = UIWindow()
         
         window?.rootViewController = UINavigationController(rootViewController: dependencies.homeViewController)
         window?.makeKeyAndVisible()
-        
-        return true
     }
 }
 
