@@ -1,6 +1,8 @@
+![Weaver logo](https://github.com/scribd/Weaver/blob/master/weaver.png)
+
 # Weaver Tutorial Part 1
 
-This project is a support for the Weaver tutorial.
+This project is a support for the Weaver tutorial part 1.
 
 ## Installation
 
