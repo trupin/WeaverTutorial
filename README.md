@@ -10,8 +10,8 @@ This project is a support for the Weaver tutorial.
 Run these commands in a terminal:
 
 ```bash
-$ git clone git@github.com:trupin/WeaverTutorialPart1.git
-$ cd WeaverTutorialPart1
+$ git clone git@github.com:trupin/WeaverTutorial.git
+$ cd WeaverTutorial
 $ open Sample.xcodeproj
 ```
 
