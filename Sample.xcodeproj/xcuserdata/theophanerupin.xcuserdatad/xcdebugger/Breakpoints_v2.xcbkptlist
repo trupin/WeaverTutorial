@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Sample/ReviewManager.swift"
-            timestampString = "561421184.4033099"
+            timestampString = "561424226.77978"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "37"
@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Sample/ReviewManager.swift"
-            timestampString = "561421184.403387"
+            timestampString = "561424226.779844"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "35"
@@ -41,28 +41,28 @@
                   symbolName = "Sample.ReviewManager.getReviews(for: Swift.UInt, completion: (Swift.Optional&lt;Sample.ReviewPage&gt;) -&gt; ()) -&gt; ()"
                   moduleName = "Sample"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/theophanerupin/Desktop/Sample/Sample/ReviewManager.swift"
-                  timestampString = "559518307.42364"
+                  urlString = "file:///Users/theophanerupin/Projects/Scribd/WeaverTutorial/Sample/ReviewManager.swift"
+                  timestampString = "561423532.635326"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "35"
                   endingLineNumber = "35"
-                  offsetFromSymbolStart = "513">
+                  offsetFromSymbolStart = "487">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #2 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__ObjC.URLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Sample.ReviewManager.getReviews(for: Swift.UInt, completion: (Swift.Optional&lt;Sample.ReviewPage&gt;) -&gt; ()) -&gt; ()"
+                  symbolName = "closure #2 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Sample.ReviewManager.getReviews(for: Swift.UInt, completion: (Swift.Optional&lt;Sample.ReviewPage&gt;) -&gt; ()) -&gt; ()"
                   moduleName = "Sample"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/theophanerupin/Desktop/Sample/Sample/ReviewManager.swift"
-                  timestampString = "559518307.427258"
+                  urlString = "file:///Users/theophanerupin/Projects/Scribd/WeaverTutorial/Sample/ReviewManager.swift"
+                  timestampString = "561423532.63692"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "37"
                   endingLineNumber = "37"
-                  offsetFromSymbolStart = "54">
+                  offsetFromSymbolStart = "89">
                </Location>
             </Locations>
          </BreakpointContent>

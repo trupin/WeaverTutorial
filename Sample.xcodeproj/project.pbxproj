@@ -22,6 +22,7 @@
 		199F5CBD2176947E00CF23B5 /* Weaver.WSReviewViewController+Injectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199F5CBC2176947E00CF23B5 /* Weaver.WSReviewViewController+Injectable.swift */; };
 		199F5CBF2176982100CF23B5 /* URLSessionSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199F5CBE2176982100CF23B5 /* URLSessionSpy.swift */; };
 		199F5CC121769B2000CF23B5 /* ImageManagerDependencyResolverSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199F5CC021769B2000CF23B5 /* ImageManagerDependencyResolverSpy.swift */; };
+		199F5CC321769FB200CF23B5 /* ImageManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199F5CC221769FB200CF23B5 /* ImageManagerTests.swift */; };
 		19C3F925215845B90091F5E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C3F924215845B90091F5E1 /* AppDelegate.swift */; };
 		19C3F92C215845BC0091F5E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19C3F92B215845BC0091F5E1 /* Assets.xcassets */; };
 		19C3F92F215845BC0091F5E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19C3F92D215845BC0091F5E1 /* LaunchScreen.storyboard */; };
@@ -63,6 +64,7 @@
 		199F5CBC2176947E00CF23B5 /* Weaver.WSReviewViewController+Injectable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Weaver.WSReviewViewController+Injectable.swift"; sourceTree = "<group>"; };
 		199F5CBE2176982100CF23B5 /* URLSessionSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionSpy.swift; sourceTree = "<group>"; };
 		199F5CC021769B2000CF23B5 /* ImageManagerDependencyResolverSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManagerDependencyResolverSpy.swift; sourceTree = "<group>"; };
+		199F5CC221769FB200CF23B5 /* ImageManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManagerTests.swift; sourceTree = "<group>"; };
 		19C3F921215845B90091F5E1 /* Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19C3F924215845B90091F5E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19C3F92B215845BC0091F5E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				199F5C8721766AC800CF23B5 /* Info.plist */,
 				199F5CBE2176982100CF23B5 /* URLSessionSpy.swift */,
 				199F5CC021769B2000CF23B5 /* ImageManagerDependencyResolverSpy.swift */,
+				199F5CC221769FB200CF23B5 /* ImageManagerTests.swift */,
 			);
 			path = SampleTests;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				199F5CC321769FB200CF23B5 /* ImageManagerTests.swift in Sources */,
 				199F5CBF2176982100CF23B5 /* URLSessionSpy.swift in Sources */,
 				199F5CC121769B2000CF23B5 /* ImageManagerDependencyResolverSpy.swift in Sources */,
 			);

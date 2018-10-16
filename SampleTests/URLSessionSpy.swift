@@ -11,6 +11,10 @@ import XCTest
 
 @testable import Sample
 
+private final class URLSessionDataTaskStub: URLSessionDataTask {
+    override func resume() { /* no-op */ }
+}
+
 final class URLSessionSpy: URLSessionProtocol {
 
     // MARK: - Records
@@ -27,9 +31,9 @@ final class URLSessionSpy: URLSessionProtocol {
         urlRecords.append(url)
         guard let result = resultStubs[url] else {
             XCTFail("Expected a result stub for url: '\(url.absoluteString)'")
-            return URLSessionDataTask()
+            return URLSessionDataTaskStub()
         }
         completionHandler(result.data, result.response, result.error)
-        return URLSessionDataTask()
+        return URLSessionDataTaskStub()
     }
 }
