@@ -17,9 +17,10 @@
 		1978BC9621597EF000FDF1F7 /* Weaver.ReviewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1978BC9521597EF000FDF1F7 /* Weaver.ReviewManager.swift */; };
 		1978BC99215982DB00FDF1F7 /* WSReviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1978BC98215982DB00FDF1F7 /* WSReviewViewController.m */; };
 		1978BC9C2159844800FDF1F7 /* WSReviewViewController+Injectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1978BC9B2159844800FDF1F7 /* WSReviewViewController+Injectable.swift */; };
-		1978BC9E2159849F00FDF1F7 /* Weaver.WSReviewViewController+Weaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1978BC9D2159849F00FDF1F7 /* Weaver.WSReviewViewController+Weaver.swift */; };
 		1978BCA0215984C800FDF1F7 /* ReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1978BC9F215984C800FDF1F7 /* ReviewTableViewCell.swift */; };
 		199F5C8621766AC800CF23B5 /* SampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199F5C8521766AC800CF23B5 /* SampleTests.swift */; };
+		199F5CBB2176921700CF23B5 /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199F5CBA2176921700CF23B5 /* URLSessionProtocol.swift */; };
+		199F5CBD2176947E00CF23B5 /* Weaver.WSReviewViewController+Injectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199F5CBC2176947E00CF23B5 /* Weaver.WSReviewViewController+Injectable.swift */; };
 		19C3F925215845B90091F5E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C3F924215845B90091F5E1 /* AppDelegate.swift */; };
 		19C3F92C215845BC0091F5E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19C3F92B215845BC0091F5E1 /* Assets.xcassets */; };
 		19C3F92F215845BC0091F5E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19C3F92D215845BC0091F5E1 /* LaunchScreen.storyboard */; };
@@ -54,11 +55,12 @@
 		1978BC98215982DB00FDF1F7 /* WSReviewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSReviewViewController.m; sourceTree = "<group>"; };
 		1978BC9A215982ED00FDF1F7 /* WSReviewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSReviewViewController.h; sourceTree = "<group>"; };
 		1978BC9B2159844800FDF1F7 /* WSReviewViewController+Injectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WSReviewViewController+Injectable.swift"; sourceTree = "<group>"; };
-		1978BC9D2159849F00FDF1F7 /* Weaver.WSReviewViewController+Weaver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Weaver.WSReviewViewController+Weaver.swift"; sourceTree = "<group>"; };
 		1978BC9F215984C800FDF1F7 /* ReviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTableViewCell.swift; sourceTree = "<group>"; };
 		199F5C8321766AC800CF23B5 /* SampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		199F5C8521766AC800CF23B5 /* SampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleTests.swift; sourceTree = "<group>"; };
 		199F5C8721766AC800CF23B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		199F5CBA2176921700CF23B5 /* URLSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
+		199F5CBC2176947E00CF23B5 /* Weaver.WSReviewViewController+Injectable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Weaver.WSReviewViewController+Injectable.swift"; sourceTree = "<group>"; };
 		19C3F921215845B90091F5E1 /* Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19C3F924215845B90091F5E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19C3F92B215845BC0091F5E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 				19C3F92D215845BC0091F5E1 /* LaunchScreen.storyboard */,
 				19C3F930215845BC0091F5E1 /* Info.plist */,
 				1978BC97215982DB00FDF1F7 /* Sample-Bridging-Header.h */,
+				199F5CBA2176921700CF23B5 /* URLSessionProtocol.swift */,
 			);
 			path = Sample;
 			sourceTree = "<group>";
@@ -145,7 +148,7 @@
 		19C3F936215845CD0091F5E1 /* Generated */ = {
 			isa = PBXGroup;
 			children = (
-				1978BC9D2159849F00FDF1F7 /* Weaver.WSReviewViewController+Weaver.swift */,
+				199F5CBC2176947E00CF23B5 /* Weaver.WSReviewViewController+Injectable.swift */,
 				1978BC9521597EF000FDF1F7 /* Weaver.ReviewManager.swift */,
 				1978BC8F21597CBE00FDF1F7 /* Weaver.MovieManager.swift */,
 				1978BC8D21596D8200FDF1F7 /* Weaver.ImageManager.swift */,
@@ -283,7 +286,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1978BC9E2159849F00FDF1F7 /* Weaver.WSReviewViewController+Weaver.swift in Sources */,
+				199F5CBB2176921700CF23B5 /* URLSessionProtocol.swift in Sources */,
 				1978BC8A215958CC00FDF1F7 /* Weaver.MovieViewController.swift in Sources */,
 				1978BC9221597DFC00FDF1F7 /* Review.swift in Sources */,
 				1978BC9021597CBE00FDF1F7 /* Weaver.MovieManager.swift in Sources */,
@@ -301,6 +304,7 @@
 				1978BC8E21596D8200FDF1F7 /* Weaver.ImageManager.swift in Sources */,
 				1978BCA0215984C800FDF1F7 /* ReviewTableViewCell.swift in Sources */,
 				19C3F93B2158469F0091F5E1 /* HomeViewController.swift in Sources */,
+				199F5CBD2176947E00CF23B5 /* Weaver.WSReviewViewController+Injectable.swift in Sources */,
 				1978BC99215982DB00FDF1F7 /* WSReviewViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

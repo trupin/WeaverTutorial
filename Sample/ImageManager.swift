@@ -11,7 +11,7 @@ import UIKit
 
 final class ImageManager {
     
-    // weaver: urlSession <- URLSession
+    // weaver: urlSession <- URLSessionProtocol
     
     private let dependencies: ImageManagerDependencyContainer
     

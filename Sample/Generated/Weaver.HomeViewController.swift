@@ -4,14 +4,14 @@ import Foundation
 import UIKit
 // MARK: - HomeViewController
 protocol HomeViewControllerInputDependencyResolver {
-    var urlSession: URLSession { get }
+    var urlSession: URLSessionProtocol { get }
 }
 protocol HomeViewControllerDependencyResolver {
     var movieManager: MovieManager { get }
     func movieController(movie: Movie) -> UIViewController
 }
 final class HomeViewControllerDependencyContainer: HomeViewControllerDependencyResolver {
-    let urlSession: URLSession
+    let urlSession: URLSessionProtocol
     private var _movieManager: MovieManager?
     var movieManager: MovieManager {
         if let value = _movieManager { return value }

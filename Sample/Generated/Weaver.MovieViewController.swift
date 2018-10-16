@@ -4,7 +4,7 @@ import Foundation
 import UIKit
 // MARK: - MovieViewController
 protocol MovieViewControllerInputDependencyResolver {
-    var urlSession: URLSession { get }
+    var urlSession: URLSessionProtocol { get }
 }
 protocol MovieViewControllerDependencyResolver {
     var movie: Movie { get }
@@ -13,7 +13,7 @@ protocol MovieViewControllerDependencyResolver {
 }
 final class MovieViewControllerDependencyContainer: MovieViewControllerDependencyResolver {
     let movie: Movie
-    let urlSession: URLSession
+    let urlSession: URLSessionProtocol
     private var _imageManager: ImageManager?
     var imageManager: ImageManager {
         if let value = _imageManager { return value }

@@ -2,7 +2,7 @@
 /// DO NOT EDIT!
 // MARK: - WSReviewViewController
 protocol WSReviewViewControllerInputDependencyResolver {
-    var urlSession: URLSession { get }
+    var urlSession: URLSessionProtocol { get }
 }
 @objc protocol WSReviewViewControllerDependencyResolver {
     var movieID: UInt { get }
@@ -10,7 +10,7 @@ protocol WSReviewViewControllerInputDependencyResolver {
 }
 final class WSReviewViewControllerDependencyContainer: NSObject, WSReviewViewControllerDependencyResolver {
     let movieID: UInt
-    let urlSession: URLSession
+    let urlSession: URLSessionProtocol
     private var _reviewManager: ReviewManager?
     var reviewManager: ReviewManager {
         if let value = _reviewManager { return value }

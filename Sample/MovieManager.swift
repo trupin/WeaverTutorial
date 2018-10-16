@@ -12,7 +12,7 @@ final class MovieManager {
     
     private let dependencies: MovieManagerDependencyResolver
     
-    // weaver: urlSession <- URLSession
+    // weaver: urlSession <- URLSessionProtocol
     
     init(injecting dependencies: MovieManagerDependencyResolver) {
         self.dependencies = dependencies

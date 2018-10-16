@@ -4,8 +4,8 @@ import UIKit
 // MARK: - AppDelegate
 protocol AppDelegateDependencyResolver {
     var homeViewController: UIViewController { get }
-    var urlSession: URLSession { get }
-    func urlSessionCustomRef() -> URLSession
+    var urlSession: URLSessionProtocol { get }
+    func urlSessionCustomRef() -> URLSessionProtocol
 }
 final class AppDelegateDependencyContainer: AppDelegateDependencyResolver {
     private var _homeViewController: UIViewController?
@@ -16,8 +16,8 @@ final class AppDelegateDependencyContainer: AppDelegateDependencyResolver {
         _homeViewController = value
         return value
     }
-    private var _urlSession: URLSession?
-    var urlSession: URLSession {
+    private var _urlSession: URLSessionProtocol?
+    var urlSession: URLSessionProtocol {
         if let value = _urlSession { return value }
         let value = urlSessionCustomRef()
         _urlSession = value

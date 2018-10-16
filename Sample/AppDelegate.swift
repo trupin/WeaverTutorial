@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     // weaver: homeViewController = HomeViewController <- UIViewController
     
-    // weaver: urlSession = URLSession
+    // weaver: urlSession = URLSession <- URLSessionProtocol
     // weaver: urlSession.scope = .container
     // weaver: urlSession.customRef = true
     
@@ -32,7 +32,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 extension AppDelegateDependencyResolver {
     
-    func urlSessionCustomRef() -> URLSession {
+    func urlSessionCustomRef() -> URLSessionProtocol {
         return URLSession(configuration: .default)
     }
 }

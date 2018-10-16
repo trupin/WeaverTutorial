@@ -12,7 +12,7 @@ import Foundation
     
     private let dependencies: ReviewManagerDependencyResolver
     
-    // weaver: urlSession <- URLSession
+    // weaver: urlSession <- URLSessionProtocol
     
     required init(injecting dependencies: ReviewManagerDependencyResolver) {
         self.dependencies = dependencies

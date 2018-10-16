@@ -3,13 +3,13 @@
 import Foundation
 // MARK: - ReviewManager
 protocol ReviewManagerInputDependencyResolver {
-    var urlSession: URLSession { get }
+    var urlSession: URLSessionProtocol { get }
 }
 protocol ReviewManagerDependencyResolver {
-    var urlSession: URLSession { get }
+    var urlSession: URLSessionProtocol { get }
 }
 final class ReviewManagerDependencyContainer: ReviewManagerDependencyResolver {
-    let urlSession: URLSession
+    let urlSession: URLSessionProtocol
     init(injecting dependencies: ReviewManagerInputDependencyResolver) {
         urlSession = dependencies.urlSession
     }

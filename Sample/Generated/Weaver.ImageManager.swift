@@ -4,13 +4,13 @@ import Foundation
 import UIKit
 // MARK: - ImageManager
 protocol ImageManagerInputDependencyResolver {
-    var urlSession: URLSession { get }
+    var urlSession: URLSessionProtocol { get }
 }
 protocol ImageManagerDependencyResolver {
-    var urlSession: URLSession { get }
+    var urlSession: URLSessionProtocol { get }
 }
 final class ImageManagerDependencyContainer: ImageManagerDependencyResolver {
-    let urlSession: URLSession
+    let urlSession: URLSessionProtocol
     init(injecting dependencies: ImageManagerInputDependencyResolver) {
         urlSession = dependencies.urlSession
     }

@@ -3,13 +3,13 @@
 import Foundation
 // MARK: - MovieManager
 protocol MovieManagerInputDependencyResolver {
-    var urlSession: URLSession { get }
+    var urlSession: URLSessionProtocol { get }
 }
 protocol MovieManagerDependencyResolver {
-    var urlSession: URLSession { get }
+    var urlSession: URLSessionProtocol { get }
 }
 final class MovieManagerDependencyContainer: MovieManagerDependencyResolver {
-    let urlSession: URLSession
+    let urlSession: URLSessionProtocol
     init(injecting dependencies: MovieManagerInputDependencyResolver) {
         urlSession = dependencies.urlSession
     }
