@@ -4,7 +4,7 @@
 # Weaver Tutorial
 
 This project is a support for the Weaver tutorial.
-- [Part 1](https://medium.com/scribd-data-science-engineering/dependency-injection-tutorial-with-weaver-on-ios-part-1-78265548dd00)
+- [Part 1](https://medium.com/scribd-data-science-engineering/dependency-injection-tutorial-with-weaver-on-ios-part-1-78265548dd00) ([branch](https://github.com/trupin/WeaverTutorial/tree/part1))
 - Part 2 (coming soon)
 - Part 3 (coming soon)
 
