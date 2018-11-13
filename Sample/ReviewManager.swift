@@ -32,7 +32,7 @@ import Foundation
             return
         }
         
-        let task = dependencies.urlSession.dataTask(with: url) { (data, response, error) in
+        let task = dependencies.urlSession.requestData(with: url) { (data, response, error) in
             
             if error != nil {
                 completionOnMainThread(nil)

@@ -8,9 +8,14 @@
 
 import Foundation
 
-protocol URLSessionProtocol: AnyObject {
+@objc protocol URLSessionProtocol: AnyObject {
     
-    func dataTask(with url: URL, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) -> URLSessionDataTask
+    func requestData(with url: URL, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) -> URLSessionDataTask
 }
 
-extension URLSession: URLSessionProtocol {}
+extension URLSession: URLSessionProtocol {
+    
+    func requestData(with url: URL, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) -> URLSessionDataTask {
+        return dataTask(with: url, completionHandler: completionHandler)
+    }
+}
