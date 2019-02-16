@@ -32,6 +32,7 @@
 		19C3F93F215848B60091F5E1 /* MovieManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C3F93E215848B60091F5E1 /* MovieManager.swift */; };
 		19C3F941215849310091F5E1 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C3F940215849310091F5E1 /* Page.swift */; };
 		19C3F94321584A120091F5E1 /* Weaver.HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C3F94221584A120091F5E1 /* Weaver.HomeViewController.swift */; };
+		21381D0838FB24CBA6590E7F /* libPods-Sample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C2CC9EAA090F23A14CCE9B6 /* libPods-Sample.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06AEB5F194AB4BB2BD793381 /* Pods-Sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sample/Pods-Sample.debug.xcconfig"; sourceTree = "<group>"; };
 		1978BC872159567C00FDF1F7 /* MovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
 		1978BC89215958CC00FDF1F7 /* Weaver.MovieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weaver.MovieViewController.swift; sourceTree = "<group>"; };
 		1978BC8B21596D3600FDF1F7 /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
@@ -76,6 +78,8 @@
 		19C3F93E215848B60091F5E1 /* MovieManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieManager.swift; sourceTree = "<group>"; };
 		19C3F940215849310091F5E1 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 		19C3F94221584A120091F5E1 /* Weaver.HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weaver.HomeViewController.swift; sourceTree = "<group>"; };
+		8C2CC9EAA090F23A14CCE9B6 /* libPods-Sample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Sample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE715F54B65D24B8B2ACAB13 /* Pods-Sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sample.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sample/Pods-Sample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21381D0838FB24CBA6590E7F /* libPods-Sample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +118,8 @@
 				19C3F923215845B90091F5E1 /* Sample */,
 				199F5C8421766AC800CF23B5 /* SampleTests */,
 				19C3F922215845B90091F5E1 /* Products */,
+				541C6FEEEE1C809C63B26E8A /* Pods */,
+				706DDBFAA131B70310FDE3C0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -165,6 +172,23 @@
 			path = Generated;
 			sourceTree = "<group>";
 		};
+		541C6FEEEE1C809C63B26E8A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				06AEB5F194AB4BB2BD793381 /* Pods-Sample.debug.xcconfig */,
+				AE715F54B65D24B8B2ACAB13 /* Pods-Sample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		706DDBFAA131B70310FDE3C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8C2CC9EAA090F23A14CCE9B6 /* libPods-Sample.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -190,6 +214,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 19C3F933215845BC0091F5E1 /* Build configuration list for PBXNativeTarget "Sample" */;
 			buildPhases = (
+				E9C00AF8D0213DA0C98E2BA1 /* [CP] Check Pods Manifest.lock */,
 				19C3F937215845DB0091F5E1 /* Weaver */,
 				19C3F91D215845B90091F5E1 /* Sources */,
 				19C3F91E215845B90091F5E1 /* Frameworks */,
@@ -275,7 +300,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "weaver generate --output_path ${SOURCE_ROOT}/Sample/Generated/ `find ${SOURCE_ROOT}/Sample -name '*.swift' | xargs -0`\n";
+			shellScript = "weaver swift --project-path $PROJECT_DIR/$PROJECT_NAME --output-path Generated --input-path \"*.swift\"\n";
+		};
+		E9C00AF8D0213DA0C98E2BA1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -498,6 +545,7 @@
 		};
 		19C3F934215845BC0091F5E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06AEB5F194AB4BB2BD793381 /* Pods-Sample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -518,6 +566,7 @@
 		};
 		19C3F935215845BC0091F5E1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE715F54B65D24B8B2ACAB13 /* Pods-Sample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
