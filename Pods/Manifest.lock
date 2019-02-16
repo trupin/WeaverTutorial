@@ -1,0 +1,16 @@
+PODS:
+  - WeaverDI (0.12.0)
+
+DEPENDENCIES:
+  - WeaverDI
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - WeaverDI
+
+SPEC CHECKSUMS:
+  WeaverDI: c8d0b45fe38a54ef2cbcf365deb17898b780bae0
+
+PODFILE CHECKSUM: 0ed28ff1cabb15f6a8787da9d0212e894f3b7f37
+
+COCOAPODS: 1.5.3

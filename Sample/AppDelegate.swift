@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     // weaver: urlSession = URLSession
     // weaver: urlSession.scope = .container
-    // weaver: urlSession.customRef = true
+    // weaver: urlSession.builder = URLSession.make
     
     func applicationDidFinishLaunching(_ application: UIApplication) {
         
@@ -30,9 +30,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 }
 
-extension AppDelegateDependencyResolver {
+extension URLSession {
     
-    func urlSessionCustomRef() -> URLSession {
+    static func make(_: AppDelegateDependencyResolver) -> URLSession {
         return URLSession(configuration: .default)
     }
 }
