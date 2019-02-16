@@ -300,7 +300,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "weaver swift --project-path $PROJECT_DIR/$PROJECT_NAME --output-path Generated --input-path \"*.swift\"\n";
+			shellScript = "$PODS_ROOT/WeaverDI/weaver/bin/weaver swift --project-path $PROJECT_DIR/$PROJECT_NAME --output-path Generated --input-path \"*.swift\"\n";
 		};
 		E9C00AF8D0213DA0C98E2BA1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
