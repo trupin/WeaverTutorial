@@ -13,9 +13,9 @@ final class ImageManager {
     
     // weaver: urlSession <- URLSession
     
-    private let dependencies: ImageManagerDependencyContainer
+    private let dependencies: ImageManagerDependencyResolver
     
-    required init(injecting dependencies: ImageManagerDependencyContainer) {
+    required init(injecting dependencies: ImageManagerDependencyResolver) {
         self.dependencies = dependencies
     }
     

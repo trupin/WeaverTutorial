@@ -16,9 +16,9 @@ final class MovieViewController: UIViewController {
     // weaver: movie <= Movie
     
     // weaver: imageManager = ImageManager
-
-    // weaver: reviewController = WSReviewViewController
-    // weaver: reviewController.scope = .transient
+    
+    // weaver: reviewManager = ReviewManager
+    // weaver: reviewManager.objc = true
 
     private var originalBarStyle: UIBarStyle?
     
@@ -107,7 +107,7 @@ final class MovieViewController: UIViewController {
 private extension MovieViewController {
     
     @objc func didTapImage(_: UITapGestureRecognizer) {
-        let controller = dependencies.reviewController(movieID: dependencies.movie.id)
+        let controller = WSReviewViewController(dependencies, movieID: dependencies.movie.id)
         navigationController?.pushViewController(controller, animated: true)
     }
 }

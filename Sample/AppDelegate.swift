@@ -13,14 +13,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
     
-    private let dependencies: AppDelegateDependencyResolver = AppDelegateDependencyContainer()
+    private let dependencies = MainDependencyContainer.appDelegateDependencyResolver()
     
     // weaver: homeViewController = HomeViewController <- UIViewController
     
     // weaver: urlSession = URLSession
-    // weaver: urlSession.scope = .container
     // weaver: urlSession.builder = URLSession.make
-    
+        
     func applicationDidFinishLaunching(_ application: UIApplication) {
         
         window = UIWindow()
